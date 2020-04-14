@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
                     print(e.localizedDescription)
                 } else {
                     //Navegar a la pantalla de chat
-                    self?.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self?.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }
