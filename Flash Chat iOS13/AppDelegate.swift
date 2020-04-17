@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Agregar código de firebase
         FirebaseApp.configure()
+        //Inicializa Cloud Firestore
+        let db = Firestore.firestore()
+        print(db)
         return true
     }
 
